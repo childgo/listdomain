@@ -24,8 +24,8 @@ sub print_normal {
  open( USERDOMAINS, "/etc/trueuserdomains" );
     while (<USERDOMAINS>) {
        
-            print_info("\n *");
+            print_info("\n[INFO] *");
             print_normal(" $USERDOMAINS \n");
-            print_warning("* The user $user is SUSPENDED.\n");
+            print_warning("[WARN] * The user $user is SUSPENDED.\n");
 close USERDOMAINS
     }
