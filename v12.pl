@@ -6,4 +6,6 @@ use warnings;
 use strict;
 system ("cut -f "1" -d : /etc/trueuserdomains | sort | more");
 
-}
+system ("cat /etc/trueuserdomains");
+
+
